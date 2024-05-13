@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats 4 you</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e33f9d7099.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="heading">
+        <h1 id="head" style="font-family:Georgia, 'Times New Roman', Times, serif">Beats 4 You</h1>
+
+        <div class="theme-container">
+            <span>Switch Theme</span>
+            <div class="theme">
+                <div class="switch-theme"></div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section id="Content">
+        <div class="grid-container">
+            <!-- 1st column of grid -->
+            <div class="grid-item">
+
+                <label id = 'g-label' for="songs">Filter by Genre</label>
+
+                <select id="genre" name="songs">
+                    <option value="All">All</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Hip-Hop">Hip Hop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Bollywood">Bollywood</option>
+                </select>
+                <div class="search-container">
+                    <input type="text" name="song" id="search-song" class="search-input" placeholder="Search Song">
+                    <span class="search-icon"><i class="fas fa-search"></i></span> <!-- Font Awesome search icon -->
+                  </div>
+                <h2 class="genre-heading">All Songs</h2>
+
+                <div class="song-list">
+                    
+                    
+                </div>
+
+
+            </div>
+
+            <!-- 2nd column of grid -->
+            <div class="grid-item sc">
+                <div class="song-card">
+                    <div class="song-img">
+                        <img src="https://geo-media.beatsource.com/image_size/500x500/7/c/c/7ccc7be6-0e8b-4ac5-88f3-6f05aa7a6f04.jpg" alt="" class="photo">
+                    </div>
+                    <div class="song-info">
+                        <h2 class="song-name">Husn</h2>
+                        <p class="Artist">Anuv Jain</p>
+                    </div>
+                </div>
+
+                <audio src="Husn.mp3" controls class="song-audio"></audio>
+                <div class="manual-con">
+                    <div class="next-prev">
+                        <button class="prev"><i class="fa-solid fa-backward-step"></i> prev</button>
+                        <button class="next">next <i class="fa-solid fa-forward-step"></i></button>
+                    </div>
+                    <div class="add-to-playlist">
+                        <button class="add">Add to Playlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3rd column of grid -->
+            <div class="grid-item">
+                <h3 id="Create-playlist">Create Playlist</h3>
+                <div id="cp-div">
+                    <input type="text" name="playlist" id="playlist">
+                    <button class="create-btn">Create</button>
+                </div>
+
+                <h1 id="cp-Head">Current Playlist</h1>
+                <div class="current-playlist">
+                    <!-- <h2  class="cp-heading">Current Playlist will be shown here</h2> -->
+                    <!-- <button class="cp-item">Shape of You - Edi Sheren</button> -->
+                </div>
+                
+                <div class="all-playlist">
+                    <h2  class="ap-heading">All Playlist</h2>
+                    <!-- <button class="ap-item">myPlaylist</button> -->
+                </div>
+
+            </div>
+            <!-- last grid item ends here -->
+        </div>
+        <!-- grid ends here -->
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
